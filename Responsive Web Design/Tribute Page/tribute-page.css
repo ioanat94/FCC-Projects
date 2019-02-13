@@ -1,0 +1,103 @@
+body {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  background-color: #d8f0f3;
+  line-height: 1.5;
+}
+
+#title {
+  text-shadow: 2px 2px 8px #666666;
+  padding: 20px 0px;
+}
+
+#img-div {
+  padding: 10px 0px 0px 0px;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px black;
+}
+
+#img-caption {
+  font-size: 13px;
+  font-style: italic;
+  padding: 10px;
+}
+
+hr {
+  border-top: 1px dashed black;
+  border-bottom: 1px solid transparent;
+  max-width: 965px;
+}
+
+#tribute-info {
+  max-width: 965px;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+span {
+  display: block;
+  text-align: right;
+  font-style: italic;
+}
+
+ul {
+  max-width: 965px;
+  text-align: justify;
+}
+
+#tribute-link {
+  text-decoration: none;
+  color: #ff9380;
+}
+
+#tribute-link:hover {
+  text-decoration: underline;
+}
+
+#gallery {
+  max-width: 965px;
+  max-height: 20px;
+  margin: 0 auto;
+}
+
+.gallery-img {
+  box-sizing: border-box;
+  float: left;
+  width: 25%;
+  padding: 0px 20px 20px 0px;
+}
+
+.gallery-img:last-child {
+  padding: 0px 0px 20px 0px;
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    margin: 1em;
+  }
+  .gallery-img {
+    width: 50%;
+  }
+  .gallery-img:last-child {
+    padding: 0px 20px 20px 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 1em;
+  }
+  .gallery-img {
+    width: 100%;
+  }
+  .gallery-img:last-child {
+  padding: 0px 20px 20px 0px;
+  }
+}

@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 62px;
+  position: fixed;
+  z-index: 2;
+  background-color: #ffcc66;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: right;
+  width: 100%;
+}
+
+nav li {
+  display: inline-block;
+  padding-top: 20px;
+}
+
+#welcome-section {
+  min-height: 55vh;
+  padding: 44.7vh 0;
+  background-color: #ffcc66;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 40px 40px 20px 40px;
+}
+
+#welcome-section h1,
+p {
+  text-align: center;
+}
+
+@keyframes nav {
+  from {
+    color: black;
+  }
+  to {
+    color: white;
+  }
+}
+
+nav a:hover {
+  animation-name: nav;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+#projects {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: auto auto auto auto;
+  background-color: #4f6bab;
+  padding-top: 50px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#projects h3 {
+  text-align: center;
+  padding: 30px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.project {
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  overflow: hidden;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 150%;
+  margin: 50px 0 50px -50px;
+  height: auto;
+  box-shadow: 1px 1px 7px black;
+  opacity: 0.5;
+}
+
+.project-pic {
+  width: 100%;
+  height: 180px;
+  border-bottom: 1px solid black;
+}
+
+@keyframes hover {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.project:hover {
+  animation-name: hover;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.project-title {
+  font-weight: bold;
+  text-align: center;
+}
+
+#andmore {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#andmore a {
+  text-decoration: none;
+  color: #000;
+  padding: 5px 15px;
+  border: 1px solid black;
+  box-shadow: 1px 1px 5px black;
+  border-radius: 5px;
+  background-color: #ffcc66;
+  font-weight: lighter;
+}
+
+#andmore a:hover {
+  animation-name: nav;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+#contact {
+  background-color: #ffcc66;
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  justify-content: space-evenly;
+}
+
+#contact h3 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  text-align: center;
+}
+
+.social {
+  transform: scale(0.5, 0.5);
+}
+
+@media screen and (max-width: 800px) {
+  #projects {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+  }
+  .project {
+    width: 70%;
+    display: block;
+    margin: 30px auto;
+  }
+  #projects h3,
+  #andmore {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  nav li {
+    display: block;
+    text-align: center;
+  }
+  header {
+    height: 145px;
+  }
+  #contact {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+  }
+  #contact h3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
